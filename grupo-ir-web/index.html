@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRUPO IR - Importación integral para tu empresa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="logo">
+      <img src="images/logo-grupo-ir.png" alt="GRUPO IR" class="logo-img">
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav-link active" data-section="inicio">Inicio</a>
+      <a href="#quienes-somos" class="nav-link" data-section="quienes-somos">Quiénes somos</a>
+      <a href="#presencia" class="nav-link" data-section="presencia">Presencia</a>
+      <a href="#contacto" class="nav-link" data-section="contacto">Contacto</a>
+    </nav>
+    <div class="header-right">
+      <a href="#contacto" class="header-cta">Contactar</a>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#inicio" class="mobile-nav-link" data-section="inicio">Inicio</a>
+      <a href="#quienes-somos" class="mobile-nav-link" data-section="quienes-somos">Quiénes somos</a>
+      <a href="#presencia" class="mobile-nav-link" data-section="presencia">Presencia</a>
+      <a href="#contacto" class="mobile-nav-link" data-section="contacto">Contacto</a>
+      <a href="#contacto" class="mobile-cta">Contactar</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <div class="hero-accent reveal-hero" data-delay="0"></div>
+      <h1 class="hero-title reveal-hero" data-delay="100">Importación integral para tu empresa</h1>
+      <p class="hero-sub reveal-hero" data-delay="200">Gestionamos importaciones y exportaciones para empresas argentinas. Productos terminados, insumos, logística, aduanas y documentación. Todo en una sola operación.</p>
+      <div class="hero-btns reveal-hero" data-delay="300">
+        <a href="#contacto" class="hero-btn-primary">Contactar</a>
+        <a href="#quienes-somos" class="hero-btn-secondary">Nuestros servicios</a>
+      </div>
+    </div>
+    <div class="hero-stats reveal-hero" data-delay="500">
+      <div class="stat">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Años de experiencia</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">360°</span>
+        <span class="stat-label">Importación y exportación</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Oficinas estratégicas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Identity Cards Section (Quiénes Somos) -->
+  <section id="quienes-somos" class="identity-section">
+    <div class="identity-row">
+      <div class="identity-left">
+        <span class="section-tag reveal">QUIÉNES SOMOS</span>
+        <h2 class="identity-title reveal">Más de 15 años facilitando importaciones para empresas argentinas</h2>
+        <p class="identity-sub reveal">Actuamos como su departamento de comercio exterior tercerizado. Buscamos proveedores, controlamos calidad, gestionamos pagos internacionales y coordinamos toda la logística hasta su depósito.</p>
+        <div class="section-line reveal"></div>
+        <div class="founders-photo reveal">
+        </div>
+        <p class="founders-caption">Shamai Idachkin & Pablo Rossi</p>
+      </div>
+      <div class="identity-right">
+        <div class="service-card reveal-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <div class="service-text">
+            <h3>Búsqueda de productos y proveedores</h3>
+            <p>Identificamos proveedores internacionales de calidad para productos terminados e insumos de cualquier industria.</p>
+          </div>
+        </div>
+        <div class="service-card reveal-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div class="service-text">
+            <h3>Control de calidad y evaluación de fábrica</h3>
+            <p>Inspección presencial en origen, verificación de especificaciones y auditoría del proveedor antes de cada embarque.</p>
+          </div>
+        </div>
+        <div class="service-card reveal-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/></svg>
+          <div class="service-text">
+            <h3>Logística y gestión aduanera</h3>
+            <p>Coordinamos flete, despacho aduanero y transporte hasta su depósito. Liberación a plaza incluida.</p>
+          </div>
+        </div>
+        <div class="service-card reveal-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4.268 21a2 2 0 0 0 1.727 1H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3"/><path d="m9 18-1.5-2h-3L3 18"/><path d="M3 14v-1a2 2 0 1 1 4 0v1"/><path d="M6 14H3"/></svg>
+          <div class="service-text">
+            <h3>Pago al exterior y documentación</h3>
+            <p>Gestionamos el pago internacional, licencias, permisos y toda la documentación necesaria para su operación.</p>
+          </div>
+        </div>
+        <div class="service-card reveal-card">
+          <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A6080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 0 3 3l1.5-1.5"/><path d="m18 11 .5.5a1 1 0 1 0 3-3L18 5a1 1 0 1 0-3 3l.5.5"/><path d="m2.5 18.5 3-3"/><path d="M3 11l6-6"/><path d="m8 8 1.5 1.5"/></svg>
+          <div class="service-text">
+            <h3>Servicio de muestras</h3>
+            <p>Coordinamos el envío de muestras para que evalúe el producto antes de confirmar la operación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Presencia Global Section -->
+  <section id="presencia" class="presencia-section">
+    <div class="presencia-header">
+      <h2 class="presencia-title reveal">Presencia en dos continentes</h2>
+      <p class="presencia-sub reveal">Presencia propia en ambos extremos de la operación. Controlamos cada etapa sin depender de terceros.</p>
+    </div>
+    <div class="presencia-cards">
+      <div class="presencia-card reveal-card">
+        <div class="presencia-card-head">
+          <div class="presencia-code">AR</div>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h3 class="presencia-city">Buenos Aires</h3>
+          <span class="presencia-country">ARGENTINA</span>
+        </div>
+        <ul class="presencia-list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>Gestión comercial y atención al cliente</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>Despacho aduanero y logística nacional</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>Coordinación de pagos al exterior</span>
+          </li>
+        </ul>
+      </div>
+      <div class="presencia-card reveal-card">
+        <div class="presencia-card-head">
+          <div class="presencia-code">CN</div>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <h3 class="presencia-city">China</h3>
+          <span class="presencia-country">ASIA</span>
+        </div>
+        <ul class="presencia-list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>Inspección y control de calidad en fábrica</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>Negociación directa con proveedores</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <span>Consolidación de carga y embarque</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transparencia Section -->
+  <section class="transparencia-section">
+    <div class="transparencia-container">
+      <div class="transparencia-header">
+        <svg class="reveal" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00B4D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+        <h2 class="transparencia-title reveal">Operaciones 100% legales y seguras</h2>
+        <p class="transparencia-intro reveal">Cumplimos con la nueva normativa china STA N° 17/2025. Operamos con licencias propias y registros válidos ante autoridades chinas.</p>
+      </div>
+
+      <div class="benefits-grid reveal">
+        <div class="benefit-item">
+          <div class="benefit-icon">✓</div>
+          <div class="benefit-content">
+            <h4>Cero Riesgo de Retención</h4>
+            <p>Sin demoras ni prohibiciones de despacho</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">✓</div>
+          <div class="benefit-content">
+            <h4>Transparencia Total</h4>
+            <p>Trazabilidad completa de cada operación</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">✓</div>
+          <div class="benefit-content">
+            <h4>Seguridad Financiera</h4>
+            <p>Inversión protegida con cumplimiento legal</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">$</div>
+          <div class="benefit-content">
+            <h4>Dólar Oficial</h4>
+            <p>Cotización del día de despacho</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">📋</div>
+          <div class="benefit-content">
+            <h4>Beneficio Impositivo</h4>
+            <p>Deducción de costos de importación</p>
+          </div>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">👁</div>
+          <div class="benefit-content">
+            <h4>Control Total</h4>
+            <p>Visibilidad de principio a fin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact Section -->
+  <section id="contacto" class="cta-section">
+    <div class="cta-row">
+      <div class="cta-left">
+        <span class="section-tag reveal">CONTACTO</span>
+        <h2 class="cta-title reveal">Hablemos de su próxima operación</h2>
+        <p class="cta-desc reveal">Dejenos sus datos y un asesor se comunicará con usted para evaluar su proyecto de importación o exportación.</p>
+        <div class="section-line reveal"></div>
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(48,66,96,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span class="contact-email"><a href="/cdn-cgi/l/email-protection#395e4b4c4956504b0b090b0f795e54585055175a5654"><span class="__cf_email__" data-cfemail="ff988d8a8f90968dcdcfcdc9bf98929e9693d19c9092">[email&#160;protected]</span></a></span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(48,66,96,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Buenos Aires, Argentina</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(48,66,96,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>China</span>
+          </div>
+        </div>
+      </div>
+      <div class="cta-right reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+              <span class="form-error">Ingrese su nombre</span>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <span class="form-error">Ingrese un email válido</span>
+          </div>
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          </div>
+          <div class="form-btns">
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Enviar consulta</span>
+              <span class="btn-loading" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              </span>
+            </button>
+            <button type="button" class="wa-btn" id="waBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              WhatsApp
+            </button>
+          </div>
+          <div class="form-success" id="formSuccess">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+            <p>Mensaje enviado con éxito. Nos comunicaremos pronto.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="monogram">IR</span>
+          <span class="logo-sep"></span>
+          <span class="footer-logo-name">GRUPO IR</span>
+        </div>
+        <p class="footer-desc">Gestión integral de importación. Lo acompañamos en todo el proceso, desde el proveedor hasta su depósito.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <a href="#quienes-somos">Sourcing</a>
+        <a href="#quienes-somos">Control de Calidad</a>
+        <a href="#quienes-somos">Logística</a>
+        <a href="#quienes-somos">Aduanas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#presencia">Presencia Global</a>
+        <a href="#contacto">Transparencia</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <a href="/cdn-cgi/l/email-protection#dab3b4bcb59abda8afaab5b3a8f4b9b5b7f4bba8" class="footer-email"><span class="__cf_email__" data-cfemail="8be2e5ede4cbecf9fefbe4e2f9a5e8e4e6a5eaf9">[email&#160;protected]</span></a>
+        <a href="#contacto">Buenos Aires, Argentina</a>
+        <a href="#contacto">China</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 GRUPO IR. Todos los derechos reservados.</span>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,255,255,0.31)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/5491158729132?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20sobre%20sus%20servicios%20de%20importaci%C3%B3n" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.44h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>

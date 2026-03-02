@@ -1,0 +1,63 @@
+==========================================
+CONFIGURACIÓN DE FORMULARIO DE CONTACTO
+==========================================
+
+El formulario está configurado para enviar emails a: grupoir2026@gmail.com
+
+Para que funcione, necesitás configurar EmailJS (servicio GRATUITO):
+
+PASO 1: Crear cuenta en EmailJS
+--------------------------------
+1. Ir a https://www.emailjs.com/
+2. Crear cuenta gratis (con Gmail grupoir2026@gmail.com)
+3. Verificar el email
+
+PASO 2: Configurar el servicio de email
+----------------------------------------
+1. En el dashboard de EmailJS, ir a "Email Services"
+2. Click en "Add New Service"
+3. Elegir "Gmail"
+4. Conectar tu cuenta grupoir2026@gmail.com
+5. Copiar el "Service ID" (algo como: service_abc123)
+
+PASO 3: Crear template de email
+--------------------------------
+1. Ir a "Email Templates"
+2. Click en "Create New Template"
+3. En el editor, poner:
+
+Subject: Nueva consulta desde GRUPO IR Web
+
+From: {{from_name}} ({{from_email}})
+Teléfono: {{phone}}
+Empresa: {{company}}
+
+Mensaje:
+{{message}}
+
+4. Guardar y copiar el "Template ID" (algo como: template_xyz789)
+
+PASO 4: Obtener tu Public Key
+------------------------------
+1. Ir a "Account" → "General"
+2. Copiar tu "Public Key" (algo como: user_AbCdEfGhIjKlMnOp)
+
+PASO 5: Actualizar el código
+-----------------------------
+Abrir el archivo "main.js" y reemplazar:
+
+línea ~117: emailjs.init("YOUR_PUBLIC_KEY"); 
+         → emailjs.init("tu_public_key_copiado");
+
+línea ~156: emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+         → emailjs.send('tu_service_id', 'tu_template_id', templateParams)
+
+¡LISTO! El formulario ahora enviará emails a grupoir2026@gmail.com
+
+==========================================
+CONTACTO WHATSAPP
+==========================================
+
+El botón de WhatsApp está configurado para: +54 9 11 5872-9132
+
+==========================================
