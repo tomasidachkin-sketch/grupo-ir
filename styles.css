@@ -1911,6 +1911,19 @@ label {
 
 /* Mobile */
 @media (max-width: 640px) {
+  .logo-img {
+    height: 50px !important;
+  }
+  
+  .header {
+    padding: 0 20px !important;
+    height: 72px !important;
+  }
+  
+  .hamburger {
+    margin-right: 0 !important;
+  }
+  
   .presencia-code {
     font-size: 35px !important;
     margin-bottom: 12px !important;
@@ -1947,20 +1960,47 @@ label {
   }
   
   .hero-title {
-    font-size: 28px !important;
+    font-size: 32px !important;
+    line-height: 1.2 !important;
   }
   
   .hero-sub {
-    font-size: 14px !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
   }
   
-  .logo-img {
-    height: 40px !important;
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    padding: 16px 28px !important;
+    font-size: 15px !important;
+    border: 2px solid currentColor !important;
+  }
+  
+  .hero-stats {
+    padding: 24px 20px !important;
+    gap: 20px !important;
+  }
+  
+  .stat {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+  
+  .stat-number {
+    font-size: 28px !important;
+  }
+  
+  .stat-label {
+    font-size: 12px !important;
   }
 }
 
 /* Mobile pequeño */
 @media (max-width: 480px) {
+  .logo-img {
+    height: 45px !important;
+  }
+  
   .presencia-code {
     font-size: 30px !important;
     margin-bottom: 10px !important;
@@ -1979,10 +2019,24 @@ label {
   }
   
   .hero-title {
-    font-size: 24px !important;
+    font-size: 28px !important;
   }
   
   .hero-sub {
-    font-size: 13px !important;
+    font-size: 14px !important;
+  }
+  
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    padding: 14px 24px !important;
+    font-size: 14px !important;
+  }
+  
+  .stat-number {
+    font-size: 24px !important;
+  }
+  
+  .stat-label {
+    font-size: 11px !important;
   }
 }
