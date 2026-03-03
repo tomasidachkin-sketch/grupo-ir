@@ -137,7 +137,7 @@ ul {
 }
 
 .logo-img {
-  height: 50px;
+  height: 80px;
   width: auto;
 }
 
@@ -1336,7 +1336,7 @@ ul {
   }
   
   .logo-img {
-    height: 100px !important;
+    height: 110px !important;
   }
 
   /* HERO */
@@ -2093,7 +2093,7 @@ label {
 /* Mobile pequeño */
 @media (max-width: 480px) {
   .logo-img {
-    height: 100px !important;
+    height: 110px !important;
   }
   
   .presencia-code {
