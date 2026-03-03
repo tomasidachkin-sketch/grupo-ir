@@ -1821,13 +1821,6 @@ label {
 }
 
 
-/* Logo más grande */
-.logo-img {
-  height: 70px !important;
-  width: auto;
-}
-
-
 
 
 /* === FIXES FINALES === */
@@ -1861,12 +1854,6 @@ label {
 .identity-section::after {
   display: none !important;
   content: none !important;
-}
-
-
-/* Logo más grande */
-.logo-img {
-  height: 120px !important;
 }
 
 
@@ -2106,7 +2093,7 @@ label {
 /* Mobile pequeño */
 @media (max-width: 480px) {
   .logo-img {
-    height: 45px !important;
+    height: 180px !important;
   }
   
   .presencia-code {
