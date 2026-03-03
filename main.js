@@ -226,17 +226,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ------------------------------------------
-  // 10. Parallax-lite on Hero BG
-  // ------------------------------------------
-  const heroBg = document.querySelector('.hero-bg');
-  if (heroBg && window.matchMedia('(min-width: 768px)').matches) {
-    window.addEventListener('scroll', () => {
-      const scrollY = window.scrollY;
-      if (scrollY < 900) {
-        heroBg.style.transform = `translateY(${scrollY * 0.15}px) scale(1.05)`;
-      }
-    }, { passive: true });
-  }
-
 });
