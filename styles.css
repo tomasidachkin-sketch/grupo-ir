@@ -137,7 +137,7 @@ ul {
 }
 
 .logo-img {
-  height: 120px;
+  height: 180px;
   width: auto;
 }
 
@@ -356,7 +356,7 @@ ul {
 }
 
 .hero-title {
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 700;
   color: #FFFFFF;
   letter-spacing: -1.5px;
@@ -364,11 +364,11 @@ ul {
 }
 
 .hero-sub {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.7;
-  max-width: 520px;
+  max-width: 480px;
 }
 
 .hero-btns {
@@ -1336,7 +1336,7 @@ ul {
   }
   
   .logo-img {
-    height: 130px !important;
+    height: 190px !important;
   }
 
   /* HERO */
@@ -1405,7 +1405,7 @@ ul {
     justify-content: flex-start !important;
     align-items: center !important;
     gap: 12px !important;
-    min-height: 130px !important;
+    min-height: 190px !important;
   }
   
   .stat-number {
@@ -2093,7 +2093,7 @@ label {
 /* Mobile pequeño */
 @media (max-width: 480px) {
   .logo-img {
-    height: 130px !important;
+    height: 190px !important;
   }
   
   .presencia-code {
