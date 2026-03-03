@@ -249,7 +249,7 @@ ul {
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 140px;
+  top: 80px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1328,7 +1328,7 @@ ul {
   /* HEADER */
   .header {
     padding: 0 20px !important;
-    height: 140px !important;
+    height: 80px !important;
   }
 
   .header-cta {
@@ -1336,7 +1336,7 @@ ul {
   }
   
   .logo-img {
-    height: 180px !important;
+    height: 100px !important;
   }
 
   /* HERO */
@@ -2093,7 +2093,7 @@ label {
 /* Mobile pequeño */
 @media (max-width: 480px) {
   .logo-img {
-    height: 180px !important;
+    height: 100px !important;
   }
   
   .presencia-code {
