@@ -3,34 +3,21 @@
    ========================================== */
 
 /* Keyframes para animaciones */
-@keyframes fadeInUp {
-  from {
-    opacity: 1 !important;
-    transform: translateY(20px);
-  }
+
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-@keyframes scaleIn {
-  from {
-    opacity: 1 !important;
-    transform: scale(0.95);
-  }
+
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
+
   50% {
-    transform: translateY(-8px);
   }
 }
 
@@ -71,39 +58,27 @@ ul {
    ========================================== */
 .reveal {
   opacity: 1 !important;
-  transform: translateY(0) !important;
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  
 }
 
-.reveal.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .reveal-card {
   opacity: 1 !important;
-  transform: translateY(0) scale(1) !important;
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  
 }
 
-.reveal-card.visible {
   opacity: 1;
-  transform: translateY(0) scale(1);
 }
 
 /* Hero-specific reveal */
 .reveal-hero {
   opacity: 1 !important;
-  transform: translateY(0) !important;
-  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  
 }
 
-.reveal-hero.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 /* ==========================================
@@ -169,7 +144,6 @@ ul {
   gap: 48px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
 }
 
 .nav-link {
@@ -187,7 +161,6 @@ ul {
 
 .nav-link:hover {
   color: #5B7FA6;
-  transform: translateY(-1px);
 }
 
 .header-right {
@@ -212,7 +185,6 @@ ul {
 }
 
 .header-cta:hover {
-  transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(91, 127, 166, 0.4);
   background: #4A6B8C;
 }
@@ -241,7 +213,6 @@ ul {
 }
 
 .hamburger.open span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -249,13 +220,12 @@ ul {
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
-  top: 90px;
+  top: 105px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -267,7 +237,6 @@ ul {
   align-items: flex-start;
   justify-content: center;
   padding-top: 60px;
-  opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
   overflow-y: hidden;
@@ -303,7 +272,6 @@ ul {
 .mobile-nav-link:active {
   color: #FFFFFF;
   border-bottom-color: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
 }
 
 /* ==========================================
@@ -401,7 +369,6 @@ ul {
 }
 
 .hero-btn-primary:hover {
-  transform: translateY(-3px) scale(1.02);
   box-shadow: 0 12px 32px rgba(91, 127, 166, 0.5);
   background: #4A6B8C;
 }
@@ -585,7 +552,6 @@ ul {
 }
 
 .service-card:hover {
-  transform: translateY(-4px) scale(1.01);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   border-color: #D8DCE2;
 }
@@ -682,7 +648,6 @@ ul {
 }
 
 .presencia-card:hover {
-  transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
   border-color: rgba(255, 255, 255, 0.08);
 }
@@ -851,7 +816,6 @@ ul {
 }
 
 .benefit-card:hover {
-  transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -1008,7 +972,6 @@ ul {
   font-size: 12px;
   color: #e53e3e;
   opacity: 1 !important;
-  transform: translateY(-4px);
   transition: opacity 0.2s, transform 0.2s;
   position: absolute;
   bottom: -18px;
@@ -1017,7 +980,6 @@ ul {
 
 .form-group.error .form-error {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .form-btns {
@@ -1049,18 +1011,15 @@ ul {
 }
 
 .submit-btn:hover {
-  transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(91, 127, 166, 0.4);
   background: #4A6B8C;
 }
 
 .submit-btn:active {
-  transform: translateY(0);
 }
 
 .btn-loading {
   display: none;
-  animation: spin 1s linear infinite;
 }
 
 .submit-btn.loading .btn-text {
@@ -1071,8 +1030,7 @@ ul {
   display: flex;
 }
 
-@keyframes spin {
-  to { transform: rotate(360deg); }
+
 }
 
 .wa-btn {
@@ -1113,7 +1071,6 @@ ul {
 
 .form-success.show {
   display: flex;
-  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .form-success p {
@@ -1122,14 +1079,9 @@ ul {
   color: #166534;
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 1 !important;
-    transform: translateY(10px);
-  }
+
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -1249,7 +1201,6 @@ ul {
 
 .footer-socials a:hover {
   opacity: 0.8;
-  transform: translateY(-2px);
 }
 
 /* ==========================================
@@ -1342,7 +1293,7 @@ ul {
   }
   
   .logo-img {
-    height: 85px !important;
+    height: 100px !important;
     margin-left: -5px !important;
   }
   /* HERO */
@@ -1531,7 +1482,6 @@ ul {
 }
 
 .benefit-item:hover {
-  transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(91, 127, 166, 0.12);
   border-color: #5B7FA6;
 }
@@ -1583,7 +1533,6 @@ ul {
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
   z-index: 1000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: pulse 2s infinite;
 }
 
 .whatsapp-float:hover {
@@ -1591,10 +1540,7 @@ ul {
   box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
 }
 
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-  }
+
   50% {
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7);
   }
@@ -1813,7 +1759,6 @@ label {
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
   z-index: 1000;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: pulse 2s infinite;
 }
 
 .whatsapp-float svg {
@@ -1976,7 +1921,7 @@ label {
   }
   
   .logo-img {
-    height: 85px !important;
+    height: 100px !important;
     margin-left: -5px !important;
   }
   
@@ -2100,7 +2045,7 @@ label {
 /* Mobile pequeño */
 @media (max-width: 480px) {
   .logo-img {
-    height: 85px !important;
+    height: 100px !important;
     margin-left: -5px !important;
   }
   
@@ -2171,18 +2116,10 @@ label {
 .presencia-section,
 .transparencia-section,
 .cta-section {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  
 }
 
-.identity-section.visible,
-.presencia-section.visible,
-.transparencia-section.visible,
-.cta-section.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 /* Títulos con animación */
@@ -2190,72 +2127,44 @@ label {
 .presencia-title,
 .transparencia-title,
 .cta-title {
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s,
-              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
+  
 }
 
-.visible .identity-title,
-.visible .presencia-title,
-.visible .transparencia-title,
-.visible .cta-title {
   opacity: 1;
-  transform: translateX(0);
 }
 
 /* Presencia cards con entrada escalonada */
 .presencia-card {
-  opacity: 0;
-  transform: translateY(40px) scale(0.95);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  
 }
 
-.presencia-section.visible .presencia-card:nth-child(1) {
   transition-delay: 0.1s;
 }
 
-.presencia-section.visible .presencia-card:nth-child(2) {
   transition-delay: 0.3s;
 }
 
-.presencia-section.visible .presencia-card {
   opacity: 1;
-  transform: translateY(0) scale(1);
 }
 
 /* Form inputs con fade in */
 .form-input,
 .form-textarea {
-  opacity: 0;
-  transform: translateY(20px);
   transition: opacity 0.5s ease-out,
               transform 0.5s ease-out;
 }
 
-.cta-section.visible .form-input,
-.cta-section.visible .form-textarea {
   opacity: 1;
-  transform: translateY(0);
 }
 
-.cta-section.visible .form-input:nth-child(1) { transition-delay: 0.1s; }
-.cta-section.visible .form-input:nth-child(2) { transition-delay: 0.2s; }
-.cta-section.visible .form-input:nth-child(3) { transition-delay: 0.3s; }
-.cta-section.visible .form-textarea { transition-delay: 0.4s; }
 
 /* Footer con fade in */
 .footer {
-  opacity: 0;
-  transform: translateY(20px);
   transition: opacity 0.8s ease-out,
               transform 0.8s ease-out;
 }
 
-.footer.visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 /* Hover elegantes para botones */
@@ -2263,35 +2172,31 @@ label {
 .hero-btn-secondary,
 .submit-btn,
 .wa-btn {
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  
 }
 
 .hero-btn-primary:hover,
 .submit-btn:hover {
-  transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(91, 127, 166, 0.4);
 }
 
 .hero-btn-secondary:hover,
 .wa-btn:hover {
-  transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* Hover para presencia cards */
 .presencia-card {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
 }
 
 .presencia-card:hover {
-  transform: translateY(-10px) scale(1.03);
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
 /* Inputs con focus elegante */
 .form-input:focus,
 .form-textarea:focus {
-  transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(91, 127, 166, 0.2);
 }
 
