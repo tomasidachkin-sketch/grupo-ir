@@ -1248,18 +1248,28 @@ ul {
     text-align: center !important;
   }
 
+  
   .hero-stats {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1fr !important;
-    gap: 4px !important;
-    padding: 18px 4px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    padding: 20px 12px !important;
     margin-top: 40px !important;
     width: 100% !important;
   }
   
+  
   .stat {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     text-align: center !important;
-    padding: 16px 4px !important;
+    padding: 12px 4px !important;
+    min-width: 0 !important;
   }
   }
   
