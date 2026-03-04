@@ -100,13 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Bloquear scroll del body cuando el menú está abierto
     if (mobileMenu.classList.contains('open')) {
-      document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
     } else {
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
     }
   });
 
@@ -114,9 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
       mobileMenu.classList.remove('open');
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
     });
   });
 
