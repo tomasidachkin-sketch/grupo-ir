@@ -143,6 +143,7 @@ ul {
   align-items: center;
   gap: 48px;
   position: absolute;
+  transform: translateX(-50%);
   left: 50%;
 }
 
@@ -292,6 +293,7 @@ ul {
 
 .hero-bg {
   position: absolute;
+  transform: translateX(-50%);
   inset: 0;
   background: url('images/hero-bg.png') center/cover no-repeat;
   opacity: 0.35;
@@ -301,6 +303,7 @@ ul {
 
 .hero-gradient {
   position: absolute;
+  transform: translateX(-50%);
   inset: 0;
   background: linear-gradient(
     to bottom,
@@ -974,6 +977,7 @@ ul {
   opacity: 1 !important;
   transition: opacity 0.2s, transform 0.2s;
   position: absolute;
+  transform: translateX(-50%);
   bottom: -18px;
   left: 0;
 }
