@@ -1220,7 +1220,7 @@ ul {
   }
 
   .hero-title {
-    font-size: 40px !important;
+    font-size: 32px !important;
     letter-spacing: -0.5px;
     line-height: 1.2 !important;
     margin-bottom: 20px !important;
@@ -1257,7 +1257,9 @@ ul {
     gap: 8px !important;
     padding: 20px 12px !important;
     margin-top: 40px !important;
-    width: 100% !important;
+    max-width: fit-content !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   
@@ -1274,7 +1276,7 @@ ul {
   }
   
   .stat-number {
-    font-size: 40px !important;
+    font-size: 32px !important;
     font-weight: 800 !important;
     margin-bottom: 8px !important;
     line-height: 1 !important;
@@ -1282,7 +1284,7 @@ ul {
   }
   
   .stat-label {
-    font-size: 12px !important;
+    font-size: 11px !important;
     line-height: 1.4 !important;
   }
   }
