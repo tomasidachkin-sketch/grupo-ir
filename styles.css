@@ -1333,7 +1333,7 @@ ul {
 @media (max-width: 640px) {
   /* HEADER */
   .header {
-    padding: 0 20px !important;
+    padding: 0 20px 0 5px !important;
     height: 80px !important;
   }
 
