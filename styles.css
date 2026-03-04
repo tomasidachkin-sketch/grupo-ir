@@ -1342,9 +1342,9 @@ ul {
   }
   
   .logo-img {
-    height: 190px !important;
+    height: 65px !important;
+    margin-left: -5px !important;
   }
-
   /* HERO */
   .hero {
     min-height: auto !important;
@@ -1976,7 +1976,8 @@ label {
   }
   
   .logo-img {
-    height: 55px !important;
+    height: 65px !important;
+    margin-left: -5px !important;
   }
   
   .hamburger {
@@ -2099,7 +2100,8 @@ label {
 /* Mobile pequeño */
 @media (max-width: 480px) {
   .logo-img {
-    height: 190px !important;
+    height: 65px !important;
+    margin-left: -5px !important;
   }
   
   .presencia-code {
