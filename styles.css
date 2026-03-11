@@ -532,7 +532,7 @@ ul {
 }
 
 /* ==========================================
-   Presencia Global Section
+   Presencia Global Section - CON MAPAS
    ========================================== */
 .presencia-section {
   background: #2C4A5E !important;
@@ -567,89 +567,198 @@ ul {
   max-width: 600px;
 }
 
-.presencia-cards {
-  display: flex;
-  gap: 28px;
+/* Grid de cards de presencia */
+.presencia-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
 }
 
-.presencia-card {
-  flex: 1;
+/* Card nueva con mapa */
+.presencia-card-new {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding: 40px 44px;
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, 0.25);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
   transition: all 0.3s ease;
 }
 
-.presencia-card:hover {
+.presencia-card-new:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
-.presencia-card-head {
+.presencia-card-info {
+  padding: 36px 32px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  position: relative;
+  gap: 24px;
 }
 
-.presencia-flag {
-  font-size: 100px !important;
-  line-height: 1 !important;
-  margin-bottom: 24px !important;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
-}
-
-.presencia-code {
-  font-size: 50px !important;
-  font-weight: 900 !important;
-  color: #FFFFFF !important;
-  letter-spacing: 4px !important;
-  margin-bottom: 20px !important;
-  opacity: 1 !important;
-}
-
-.presencia-city {
-  font-size: 26px;
-  font-weight: 800;
-  color: #FFFFFF !important;
-}
-
-.presencia-country {
-  font-size: 11px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.5) !important;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-}
-
-.presencia-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.presencia-list li {
+.presencia-card-header {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 }
 
-.presencia-list li svg {
+/* Badge de bandera */
+.presencia-flag-badge {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
   flex-shrink: 0;
 }
 
-.presencia-list li span {
+.presencia-flag-badge.ar {
+  background: linear-gradient(135deg, #74acdf 0%, #4a8bc2 100%);
+}
+
+.presencia-flag-badge.cn {
+  background: linear-gradient(135deg, #de2910 0%, #b8220d 100%);
+}
+
+/* Título de ubicación */
+.presencia-location-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.presencia-location-title h3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.presencia-location-title .country-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+/* Box de dirección */
+.presencia-address-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.presencia-address-box svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #5B9FD8;
+}
+
+.presencia-address-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.presencia-address-text .company-name {
   font-size: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.presencia-address-text .address-line {
+  font-size: 14px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Lista de servicios */
+.presencia-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.presencia-service-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.presencia-service-item svg {
+  flex-shrink: 0;
+  color: rgba(91, 159, 216, 0.8);
+}
+
+.presencia-service-item span {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mapa Container */
+.presencia-map-wrapper {
+  position: relative;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.presencia-map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(40%) contrast(1.05);
+  transition: filter 0.4s ease;
+}
+
+.presencia-card-new:hover .presencia-map-wrapper iframe {
+  filter: grayscale(0%) contrast(1);
+}
+
+/* Overlay del link del mapa */
+.map-link-overlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(26, 56, 84, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.map-link-overlay:hover {
+  background: #5B7FA6;
+  border-color: #5B7FA6;
+}
+
+.map-link-overlay svg {
+  width: 14px;
+  height: 14px;
 }
 
 /* ==========================================
@@ -1155,10 +1264,6 @@ ul {
     padding: 100px 40px;
   }
 
-  .presencia-cards {
-    flex-direction: column;
-  }
-
   .transparencia-section {
     padding: 100px 40px;
   }
@@ -1182,6 +1287,13 @@ ul {
 
   .footer-brand {
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .presencia-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
@@ -1248,7 +1360,6 @@ ul {
     text-align: center !important;
   }
 
-  
   .hero-stats {
     display: flex !important;
     flex-direction: row !important;
@@ -1262,7 +1373,6 @@ ul {
     margin-right: auto !important;
   }
   
-  
   .stat {
     flex: 1 !important;
     display: flex !important;
@@ -1273,7 +1383,6 @@ ul {
     padding: 12px 4px !important;
     min-width: 0 !important;
   }
-  }
   
   .stat-number {
     font-size: 32px !important;
@@ -1281,12 +1390,10 @@ ul {
     margin-bottom: 8px !important;
     line-height: 1 !important;
   }
-  }
   
   .stat-label {
     font-size: 11px !important;
     line-height: 1.4 !important;
-  }
   }
 
   .stat-divider {
@@ -1312,25 +1419,58 @@ ul {
 
   .presencia-sub {
     text-align: left;
+    font-size: 15px;
   }
-  
-  .presencia-code {
-    font-size: 35px !important;
-    margin-bottom: 12px !important;
-    letter-spacing: 2px !important;
+
+  /* Presencia cards mobile */
+  .presencia-card-info {
+    padding: 28px 24px;
+    gap: 20px;
   }
-  
-  .presencia-city {
-    font-size: 20px !important;
+
+  .presencia-card-header {
+    gap: 16px;
   }
-  
-  .presencia-country {
-    font-size: 9px !important;
-    letter-spacing: 2px !important;
+
+  .presencia-flag-badge {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+    border-radius: 12px;
   }
-  
-  .presencia-card {
-    padding: 28px 20px !important;
+
+  .presencia-location-title h3 {
+    font-size: 22px;
+  }
+
+  .presencia-location-title .country-tag {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .presencia-address-box {
+    padding: 14px 16px;
+  }
+
+  .presencia-address-text .company-name {
+    font-size: 14px;
+  }
+
+  .presencia-address-text .address-line {
+    font-size: 13px;
+  }
+
+  .presencia-service-item span {
+    font-size: 13px;
+  }
+
+  .presencia-map-wrapper {
+    height: 180px;
+  }
+
+  .map-link-overlay {
+    padding: 8px 12px;
+    font-size: 12px;
   }
 
   .form-row {
@@ -1384,21 +1524,14 @@ ul {
     margin-left: -5px !important;
   }
   
-  .presencia-code {
-    font-size: 30px !important;
-    margin-bottom: 10px !important;
+  .presencia-flag-badge {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
   }
-  
-  .presencia-city {
-    font-size: 18px !important;
-  }
-  
-  .presencia-country {
-    font-size: 8px !important;
-  }
-  
-  .presencia-card {
-    padding: 24px 16px !important;
+
+  .presencia-location-title h3 {
+    font-size: 20px;
   }
   
   .hero-title {
